@@ -12,12 +12,12 @@ onMounted(() => {
     type: "delayed",
     duration: 200,
     animTimingFunction: Vivus.EASE_OUT,
-    start: "manual", // manual
+    start: "autostart", // manual
   });
   animate.play();
   setTimeout(() => {
-    contentShowFlag.value = true;
-    imgShowFlag.value = false;
+    // contentShowFlag.value = true;
+    // imgShowFlag.value = false;
   }, 2000);
 });
 </script>
@@ -92,11 +92,11 @@ onMounted(() => {
 }
 #text {
   padding: 20px;
-}
-.cls-1 {
   fill: white;
   stroke: #006934;
   stroke-width: 1;
+}
+.cls-1 {
 }
 .content-display-none {
   display: none;

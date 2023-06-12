@@ -5,9 +5,12 @@ import vue from "@vitejs/plugin-vue";
 export default defineConfig({
   plugins: [vue()],
   base: "./",
+  root: "src",
+  publicDir: "public",
 
   // minifyせずに出力（コードを読みやすくするため）
   build: {
     minify: true,
+    outDir: "../",
   },
 });
